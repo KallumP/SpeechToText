@@ -10,6 +10,7 @@ const InputContainer: FC<InputContainerProps> = ({ globalSendMessage }) => {
 	const [typedMessage, setTypedMessage] = useState<string>('');
 
 	const handleMessageSend = (message: string) => {
+		if (message.length === 0) return;
 		globalSendMessage(message);
 		setTypedMessage('');
 	};
