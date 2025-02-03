@@ -1,0 +1,56 @@
+.app {
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+	width: 95vw;
+	max-width: 600px;
+}
+
+button {
+	padding: 15px;
+	border-radius: 8px;
+	border: 1px solid #646cff;
+	background-color: #1a1a1a;
+	font-size: var(--buttonFontSize);
+
+	cursor: pointer;
+}
+button.error {
+	background-color: red;
+	border-color: red;
+}
+button:disabled {
+	border-color: transparent;
+}
+
+input {
+	padding: 15px;
+	color: #fff;
+	background-color: #1a1a1a;
+	border-radius: 8px;
+	border: 1px solid #646cff;
+	font-size: var(--fontSize);
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	transform: translate(-50%, -50%);
+
+	width: 20%;
+	min-width: 300px;
+	padding: 30px 30px 30px 30px;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #1a1a1a;
+}
+
+.clearChat {
+	position: fixed;
+	top: 5px;
+	left: 5px;
+}

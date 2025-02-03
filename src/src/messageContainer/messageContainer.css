@@ -1,0 +1,19 @@
+.messageContainer {
+    flex: 1;
+	overflow-y: auto;
+    margin-top: 5px;
+	padding: 10px;
+
+    border-radius: 8px;
+    border: 1px solid #646cff;
+    background-color: #1a1a1a;
+}
+
+.messageContainer .message {
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: justify;
+
+    border-radius: 8px;
+    background-color: #646cff;
+}
